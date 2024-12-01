@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Video.js Player</title>
+  </head>
+  <body>
+    <div class="video-container">
+      <video
+        id="my-video"
+        class="video-js vjs-big-play-centered"
+        controls
+        preload="auto"
+        playsinline
+        webkit-playsinline
+        poster="https://vjs.zencdn.net/v/oceans.png"
+        data-setup="{}"
+      >
+        <source
+          src="https://vjs.zencdn.net/v/oceans.mp4"
+          type="video/mp4"
+        />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that supports HTML5 video
+        </p>
+      </video>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
